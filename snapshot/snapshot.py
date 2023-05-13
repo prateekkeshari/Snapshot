@@ -18,8 +18,8 @@ for url in urls:
     # wait for the page to load completely
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
     
-    # wait for 2 seconds to ensure all content is loaded
-    time.sleep(2)
+    # wait for 3 seconds to ensure all content is loaded
+    time.sleep(3)
     
     # take a screenshot and save it locally
     filename = url.split('//')[1] + '.png'  # extract the domain name from the URL
